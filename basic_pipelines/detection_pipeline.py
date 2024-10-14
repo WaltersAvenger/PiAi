@@ -60,7 +60,7 @@ class GStreamerDetectionApp(GStreamerApp):
         self.network_format = "RGB"
         nms_score_threshold = 0.3
         nms_iou_threshold = 0.45
-        sink = Gst.ElementFactory.make("autovideosink", "sink")
+
         if args.hef_path is not None:
             self.hef_path = args.hef_path
         # Set the HEF file path based on the network
